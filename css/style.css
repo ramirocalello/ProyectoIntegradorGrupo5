@@ -94,7 +94,7 @@
   
   .galeria {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     gap: 20px;
     list-style: none;
