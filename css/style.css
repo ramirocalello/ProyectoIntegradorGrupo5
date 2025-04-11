@@ -1,7 +1,7 @@
 
 /*  INDEX  */
 
-* {
+* {                                   /* sirve para resetar la pagina x defecto */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -20,6 +20,7 @@ header {
   padding: 20px 40px;
   background-color: #1b1b1b;
   border-bottom: 2px solid #e50914;
+  width: 100%;
 }
 
 .header-left img {
@@ -43,7 +44,7 @@ header {
   padding: 5px 10px;
 }
 
-.header-right .buscador {      /*junto dos clases*/
+.buscador {      /*junto dos clases*/
   display: flex;
   align-items: center;
   background-color: #1c1c1c;
@@ -51,9 +52,9 @@ header {
   padding: 5px 15px;
 }
 
-.buscador input[type="text"] {    
+.buscador input {    
   background-color: #1c1c1c;
-  border: none;
+  border-radius: 5px;
   color: white;
   padding: 8px;
 }
@@ -110,37 +111,66 @@ section h2 {
 
 /*  ESTILOS LOGIN Y REGISTER */
 
+.button{
+  background-color: #e50914;
+  color: #ccc;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  align-items: center;
+  width: 100%;
+}
+
+.iiii {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #141414;
+  margin: 50px;
+  height: 50vh;
+  width: 45vw;
+  flex-wrap: wrap;
+  padding: 50px;
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+
+
 body.login-page {
   background-color: #141414;
   color: #e5e5e5;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 120px 0 40px 0; /* espacio arriba para que no tape el header */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;                                       /* espacio arriba para que no tape el header */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 body.login-page .logo-minimal {
   text-align: center;
-  margin: 0 0 25px 0;
 }
 
 body.login-page .logo-minimal img {
   width: 220px;
 }
 
-body.login-page form {
+body.login-page .formulario {
   background-color: #1f1f1f;
   padding: 30px;
   width: 500px;
   margin: 0 auto; /* centra horizontalmente el formulario */
 }
 
-body.login-page form h2 {
+body.login-page .formulario h2 {
   text-align: center;
   color: #e50914;
   margin: 0 0 25px 0;
   font-size: 28px;
 }
 
-body.login-page form label {
+body.login-page .formulario label {
   display: block;
   font-size: 14px;
   color: #ccc;
@@ -175,17 +205,8 @@ body.login-page form .checkbox-container {
   font-size: 14px;
   color: #ccc;
   margin: 0 0 20px 0;
-}
-
-body.login-page form button {
-  padding: 10px;
-  background-color: #e50914;
-  color: white;
-  border: none;
-  font-weight: bold;
-  font-size: 16px;
-  width: 100%;
-  margin: 10px 0 0 0;
+  display: flex;
+  margin-top: 30px;
 }
 
 body.login-page form a {
@@ -349,6 +370,13 @@ body.pagina-busqueda .galeria a {
   display: block;
 }
 
+footer{
+  margin-top: 70px;
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
@@ -365,14 +393,18 @@ body.pagina-busqueda .galeria a {
     margin: 10px 0px 10px 0px;
   }
 
-  .header-right {
+  .buscador {
     margin: 15px 0px 0px 0px;
   }
 
   .buscador {
     width: 100%;
     justify-content: center;
-    padding: 0px 0px 0px 0px;
+  }
+
+  .formulario{
+    width: 100%;
+    justify-content: center;
   }
 
   main {
@@ -382,7 +414,6 @@ body.pagina-busqueda .galeria a {
   .galeria {
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0px 0px 0px 0px;
   }
 
   .galeria li {
@@ -546,7 +577,7 @@ body.pagina-busqueda .galeria a {
     margin: 0 0 20px 0;
   }
 
-  form button {
+  .button {
     padding: 10px;
     width: 100%;
     font-size: 16px;
@@ -614,9 +645,12 @@ body.pagina-busqueda .galeria a {
         margin: 5px 0;
       }
     
-      .header-right {
+      .buscador {
         display: flex;
-        justify-content: center;
+        align-items: center;
+        background-color: #1c1c1c;
+        border: 1px solid #333;
+        padding: 5px 15px;
       }
     
       .buscador {

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro - FilmVerse</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -21,9 +22,9 @@
       </ul>
     </nav>
 
-    <div class="header-right">
-      <form action="search-results.html" method="GET" class="buscador">
-        <input type="text" name="q" placeholder="Buscar...">
+    <div class="buscador">
+      <form action="search-results.html" method="GET"> 
+        <input type="text" name="user" placeholder="Buscar..."> 
         <button type="submit">Buscar</button>
       </form>
     </div>
@@ -33,29 +34,42 @@
     <img src="./img/logito.png" alt="Logo FilmVerse">
   </div>
 
-  <form action="index.html">
-    <h2>Crear cuenta</h2>
+  <main class="iiii">
 
-    <label for="email">Email</label>
-    <input class="email-input" type="text" id="email" name="email">
-
-    <label for="password">Contraseña</label>
-    <input class="password-input" type="text" id="password" name="password">
-
-    <div class="checkbox-container">
-      <input type="checkbox" id="terminos" name="terminos" required>
-      <label for="terminos">Acepto los términos y condiciones</label>
-    </div>
-
-    <button type="submit">Registrarme</button>
-
-    <a href="login.html">Ya tengo una cuenta</a>
-  </form>
-
-  <footer>
-    <p>Desarrollado por: Nicolas Aboso, Ramiro Calello y Francisco Fraquelli</p>
-  </footer>
+    <form class="formulario" action="index.html" method="GET">
+      
+      <h2 class="lol"> Registrarse </h2>
   
-</body>
-</html>
-
+        <div class="lol">
+      <label for="email">Email</label>
+      <input class="email-input" type="email" name="mail" value="">
+        </div>
+  
+        <di class="lol">
+      <label for="password">Contraseña</label>
+      <input class="password-input" type="password" id="password" name="user" value="">
+        </di>
+  
+      <div class="checkbox-container">
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos">Acepto los términos y condiciones</label>
+      </div>
+      
+   
+      <button class="button">Registrar</button>
+   
+  
+  
+  
+      <a href="login.html"> Ya tengo cuenta</a>
+  
+    </form>
+  </main>
+    <footer>
+      <p>Desarrollado por: Nicolas Aboso, Ramiro Calello y Francisco Fraquelli</p>
+    </footer>
+  
+  </body>
+  </html>
+  
+  
