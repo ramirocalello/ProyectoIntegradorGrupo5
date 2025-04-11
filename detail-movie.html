@@ -1,54 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Movie</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <body>
-        <header>
-          <div class="header-left">
-            <img src="./img/logito.png" alt="Logo FilmVerse">
-          </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Back to the Future - Detalle</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <img src="./img/logito.png" alt="Logo FilmVerse">
+    </div>
+
+    <nav class="header-center">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="moviesgenres.html">Géneros de Películas</a></li>
+        <li><a href="seriesgenres.html">Géneros de Series</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-right">
+      <form action="./search-results.html" method="GET" class="buscador">
+        <input type="text" name="q" placeholder="Buscar...">
+        <button type="submit">Buscar</button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <section class="detalle-pelicula">
       
-          <nav class="header-center">
-            <ul>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="moviesgenres.html">Géneros de Películas</a></li>
-              <li><a href="seriesgenres.html">Géneros de Series</a></li>
-              <li><a href="login.html">Login</a></li>
-            </ul>
-          </nav>
+      <div class="detalle-img">
+        <img src="./img/Back-To-The-Future.jpg" alt="Back to the Future">
+      </div>
       
-          <div class="header-right">
-            <form action="search-results.html" method="GET" class="buscador">
-              <input type="text" name="q" placeholder="Buscar...">
-              <button type="submit">Buscar</button>
-            </form>
-          </div>
-        </header>
-      
-        <main>
-          <section class="sectiondetail">
-            <img src="./img/Back-To-The-Future.jpg" alt="Back to the Future">
-            <ul>
-              <li><h2>Back to the Future</h2></li>
-              <li>Rating: 4.9</li>
-              <li>Estreno: 1985-07-03</li>
-              <li>Duración: 1 h 56 min</li>
-              <li>
-                Teenager Marty McFly is friends with Doc, a scientist who has built a time machine.
-                When the two test the device, a fortuitous error sends Marty back to 1955, the year
-                his parents were in high school and hadn't yet met. After preventing their first meeting,
-                Marty must make sure they meet and fall in love, otherwise their existence would be impossible.
-              </li>
-              <li><a href="detail-genres.html">Género: Sci-Fi</a></li>
-            </ul>
-          </section>
-        </main>
-      
-        <footer>
-          <p>Desarrollado por: Nicolas Aboso, Ramiro Calello y Francisco Fraquelli</p>
-        </footer>
-      </body>
-      
+      <div class="detalle-info">
+        <h1>Volver al Futuro (1985)</h1>
+        <h2>Back to the Future</h2>
+
+        <div class="meta">
+          <p><strong>Calificación:</strong> 96%</p>
+          <p>8.5 desde 1.2M usuarios</p>
+          <p><strong>Duración:</strong> 116 min</p>
+          <p><strong>Calidad:</strong> HD</p>
+        </div>
+
+        <p class="descripcion">
+          Marty McFly, un adolescente típico de los años 80, accidentalmente viaja al pasado en una máquina del tiempo construida por su excéntrico amigo, el científico Doc Brown. Transportado al año 1955, Marty se encuentra con una versión más joven de sus padres antes de que se enamoren. Al interferir sin querer en su primer encuentro, pone en peligro su propia existencia. Ahora, con el tiempo en su contra, deberá encontrar a Doc en el pasado y reparar la línea temporal ayudando a que sus padres se conozcan, todo mientras intenta regresar al futuro antes de que sea demasiado tarde.
+        </p>
+
+        <p><strong>Género:</strong> <a href="./detail-genres.html">Ciencia ficción</a>
+        <p><strong>País:</strong> Estados Unidos</p>
+        <p><strong>Director:</strong> Robert Zemeckis</p>
+        <p><strong>Actores:</strong> Michael J. Fox, Christopher Lloyd, Lea Thompson</p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Desarrollado por: Nicolas Aboso, Ramiro Calello y Francisco Fraquelli</p>
+  </footer>
+
+</body>
+</html>
+

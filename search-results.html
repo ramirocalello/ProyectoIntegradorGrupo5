@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resultados de Búsqueda</title>
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
-<body>
-    
+<body class="pagina-busqueda">
+  <header>
+    <div class="header-left">
+      <img src="./img/logito.png" alt="Logo FilmVerse">
+    </div>
+
+    <nav class="header-center">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="moviesgenres.html">Géneros de Películas</a></li>
+        <li><a href="seriesgenres.html">Géneros de Series</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-right">
+      <form action="search-results.html" method="GET" class="buscador">
+        <input type="text" name="q" placeholder="Buscar...">
+        <button type="submit">Buscar</button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Resultados de búsqueda</h2>
+      <ul class="galeria">
+        <li>
+          <a href="detail-movie.html">
+            <img src="./img/fight club.jpg" alt="Fight Club">
+            <h3>Fight Club (1999)</h3>
+            <p>Un oficinista frustrado conoce a un fabricante de jabón que lo introduce en un club secreto de peleas.</p>
+          </a>
+        </li>
+        <li>
+          <a href="detail-movie.html">
+            <img src="./img/Back-To-The-Future.jpg" alt="Back to the Future">
+            <h3>Back to the Future (1985)</h3>
+            <p>Un adolescente viaja accidentalmente al pasado y debe asegurarse de que sus padres se enamoren.</p>
+          </a>
+        </li>
+        <li>
+          <a href="detail-serie.html">
+            <img src="./img/stranger things.jpg" alt="Stranger Things">
+            <h3>Stranger Things (2016)</h3>
+            <p>Un grupo de niños descubre fuerzas sobrenaturales en su ciudad cuando desaparece uno de ellos.</p>
+          </a>
+        </li>
+        <li>
+          <a href="detail-serie.html">
+            <img src="./img/the office.jpg" alt="The Office">
+            <h3>The Office (2005)</h3>
+            <p>Una comedia sobre el día a día de los empleados de una oficina de ventas de papel.</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desarrollado por: Nicolas Aboso, Ramiro Calello y Francisco Fraquelli</p>
+  </footer>
 </body>
 </html>
