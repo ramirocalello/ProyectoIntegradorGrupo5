@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FilmVerse</title> <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FilmVerse</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+
   <header>
     <div class="header-left">
       <img src="./img/logito.png" alt="Logo FilmVerse">
     </div>
-  
+
     <nav class="header-center">
       <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -20,129 +21,50 @@
         <li><a href="login.html">Login</a></li> 
       </ul>
     </nav>
-  
+
     <div class="buscador">
-      <form action="search-results.html" method="GET"> 
-        <input type="text" name="user" placeholder="Buscar..."> 
+      <form action="search-results.html" method="GET">
+        <input type="text" name="query" placeholder="Buscar..." required>
+        <div class="radio-buttons">
+          <label>
+            <input type="radio" name="tipo" value="movie" checked> Películas
+          </label>
+          <label>
+            <input type="radio" name="tipo" value="tv"> Series
+          </label>
+        </div>
         <button type="submit">Buscar</button>
       </form>
-      
     </div>
   </header>
-  
-            
-    <main>
-        <section>
-            <h2>Peliculas Populares</h2>
-            <ul class="galeria">
 
-                <li>
-                    <a href="detail-movie.html">
-                        <img src="./img/Back-To-The-Future.jpg" alt="Back to the Future">      
-                            <p>Back to the Future<br>1985-07-03</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="detail-movie.html"> 
-                        <img src="./img/Lion King.jpg" alt="The Lion King">
-                            <p>The Lion King<br>1994-06-15</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="detail-movie.html">
-                        <img src="./img/terminator 2.jpg" alt="Terminator 2">
-                            <p>Terminator 2<br>1991-07-03</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="detail-movie.html">
-                        <img src="./img/ghost busters.jpg" alt="ghostbusters">
-                            <p>ghostbusters<br>1984-07-03</p>
-                    </a>
-                </li>
-                <li>
-                <a href="detail-genres.html">
-                  <img src="./img/home alone.jpg" alt="Home Alone">
-                        <p>Home Alone<br>1990-11-16</p>
-                    </a>
-                </li>
-            </ul>
-        </section>
+  <main>
+    <section>
+      <h2>Películas Populares</h2>
+      <ul class="galeria" id="peliculas-populares">
+        <!-- El JS carga acá las películas populares -->
+      </ul>
+    </section>
 
-        <section>
-            <h2>Series Populares</h2>
-            <ul class="galeria">
-              <li>
-                <a href="detail-serie.html">
-                  <img src="./img/breaking bad.jpg" alt="Breaking Bad">
-                  <p>Breaking Bad<br>2008-01-20</p>
-                </a>
-              </li>
-              <li>
-                <a href="detail-serie.html">
-                  <img src="./img/stranger things.jpg" alt="Stranger Things">
-                  <p>Stranger Things<br>2016-07-15</p>
-                </a>
-              </li>
-              <li>
-                <a href="detail-serie.html">
-                  <img src="./img/dark.jpg" alt="Dark">
-                  <p>Dark<br>2017-12-01</p>
-                </a>
-              </li>
-              <li>
-                <a href="detail-serie.html">
-                  <img src="./img/the office.jpg" alt="The Office">
-                  <p>The Office<br>2005-03-24</p>
-                </a>
-              </li>
-              <li>
-                <a href="detail-serie.html">
-                  <img src="./img/friends.jpg" alt="Friends">
-                  <p>Friends<br>1994-09-22</p>
-                </a>
-              </li>
-            </ul>
-          </section>
-      
-          <section>
-            <h2>Películas Más Valoradas</h2>
-            <ul class="galeria">
-              <li>
-                <a href="detail-movie.html">
-                  <img src="./img/Cadena_perpetua-576140557-large.jpg" alt="The Shawshank Redemption">
-                  <p>The Shawshank Redemption<br>1994-09-23</p>
-                </a>
-              </li>
-              <li>
-                <a href="detail-movie.html">
-                  <img src="./img/the god father.jpg" alt="The Godfather">
-                  <p>The Godfather<br>1972-03-24</p>
-                </a>
-              </li>
-              <li>
-                <a href="detail-movie.html">
-                  <img src="./img/Pulp_Fiction.jpg" alt="Pulp Fiction">
-                  <p>Pulp Fiction<br>1994-10-14</p>
-                </a>
-              </li>
-              <li>
-                <a href="detail-movie.html">
-                  <img src="./img/Forrest_Gump.jpg" alt="Forrest Gump">  
-                  <p>Forrest Gump<br>1994-07-06</p>
-                </a>
-              </li>
-              <li>
-                <a href="detail-movie.html">
-                  <img src="./img/fight club.jpg" alt="Fight Club">
-                  <p>Fight Club<br>1999-10-15</p>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </main>
-        <footer>
-            <p>Desarrollado por: Nicolas Aboso, Ramiro Calello y Fransico Fraquelli</p>
-          </footer>
+    <section>
+      <h2>Series Populares</h2>
+      <ul class="galeria" id="series-populares">
+        <!-- El JS carga acá las series populares -->
+      </ul>
+    </section>
+
+    <section>
+      <h2>Películas Más Valoradas</h2>
+      <ul class="galeria" id="peliculas-mejor-valoradas">
+        <!-- El JS carga acá las películas mejor valoradas -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desarrollado por: Nicolas Aboso, Ramiro Calello y Francisco Fraquelli</p>
+  </footer>
+
+  <script src="./index.js"></script> <!-- Script que carga todo dinámicamente -->
+</body>
 </html>
-</header>

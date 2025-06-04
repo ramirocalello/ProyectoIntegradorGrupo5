@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movies Genres</title> 
+  <title>Géneros de Películas</title> 
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -11,7 +11,6 @@
     <div class="header-left">
       <img src="./img/logito.png" alt="Logo FilmVerse">
     </div>
-  
     <nav class="header-center">
       <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -20,7 +19,6 @@
         <li><a href="login.html">Login</a></li> 
       </ul>
     </nav>
-  
     <div class="buscador">
       <form action="search-results.html" method="GET"> 
         <input type="text" name="user" placeholder="Buscar..."> 
@@ -31,22 +29,17 @@
 
   <main class="moviesgenre">
     <section>
-      <h2>Géneros Peliculas</h2>
-      <ul>
-        <li><a href="detail-genres.html"><h3>Ciencia ficción</h3></a></li>
-        <li><a href="detail-genres.html"><h3>Acción</h3></a></li> 
-        <li><a href="detail-genres.html"><h3>Cine De Terror</h3></a></li>
-        <li><a href="detail-genres.html"><h3>Infantil</h3></a></li>
-        <li><a href="detail-genres.html"><h3>Carcelario</h3></a></li>
-        <li><a href="detail-genres.html"><h3>Mafia</h3></a></li>
-        <li><a href="detail-genres.html"><h3>Cine Romántico</h3></a></li>
-        <li><a href="detail-genres.html"><h3>Suspenso</h3></a></li>
+      <h2>Géneros de Películas</h2>
+      <ul id="lista-generos-peliculas">
+        <!-- Los géneros de películas se cargarán acá -->
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>Desarrollado por: Nicolas Aboso, Ramiro Calello y Fransico Fraquelli</p>
+    <p>Desarrollado por: Nicolas Aboso, Ramiro Calello y Francisco Fraquelli</p>
   </footer>
+
+  <script src="./generos.js"></script>
 </body>
 </html>
