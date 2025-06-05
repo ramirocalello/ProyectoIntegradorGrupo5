@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Breaking Bad - Detalle</title>
+  <title>Detalle Serie</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
   <header>
     
     <div class="header-left">
-      <img src="./img/logito.png" alt="Logo FilmVerse"> 
+      <img src="./img/logito.png" alt="Logo FilmVerse">
     </div>
 
     <nav class="header-center">
@@ -24,8 +24,12 @@
     </nav>
 
     <div class="buscador">
-      <form action="search-results.html" method="GET"> 
-        <input type="text" name="user" placeholder="Buscar..."> 
+      <form action="search-results.html" method="GET">
+        <input type="text" name="query" placeholder="Buscar..." required> 
+        <div class="radio-buttons">
+          <label><input type="radio" name="tipo" value="movie" checked> Películas</label>
+          <label><input type="radio" name="tipo" value="tv"> Series</label>
+        </div>
         <button type="submit">Buscar</button>
       </form>
     </div>
@@ -33,32 +37,21 @@
 
   <main>
     <section class="detalle-pelicula">
-      
       <div class="detalle-img">
-        <img src="./img/breaking bad.jpg" alt="Breaking Bad">
+        <img id="poster" src="" alt="Poster de la serie">
       </div>
       
       <div class="detalle-info">
-        <h1>Breaking Bad (2008)</h1>
-        <h2>Breaking Bad</h2>
-
+        <h1 id="titulo"></h1>
         <div class="meta">
-          <p><strong>Calificación:</strong> 98%</p>
-          <p>9.5 desde 2.0M usuarios</p>
-          <p><strong>Temporadas:</strong> 5</p>
-          <p><strong>Calidad:</strong> HD</p>
+          <p><strong>Calificación:</strong> <span id="calificacion"></span></p>
+          <p><strong>Fecha de estreno:</strong> <span id="fecha"></span></p>
         </div>
 
-        <p class="descripcion">
-          Walter White, un profesor de química de secundaria, descubre que tiene cáncer terminal. Para asegurar el futuro económico de su familia, decide meterse en el mundo de la fabricación y venta de metanfetamina con la ayuda de un exalumno. Lo que comienza como una decisión desesperada se convierte en una peligrosa doble vida que transformará su moral, relaciones y destino para siempre.
-        </p>
+        <p class="descripcion" id="descripcion"></p>
 
-        <p><strong>Género:</strong> <a href="./detail-genres.html">Drama</a>
-        <p><strong>País:</strong> Estados Unidos</p>
-        <p><strong>Creador:</strong> Vince Gilligan</p>
-        <p><strong>Actores:</strong> Bryan Cranston, Aaron Paul, Anna Gunn</p>
+        <p><strong>Género:</strong> <span id="generos"></span></p>
       </div>
-
     </section>
   </main>
 
@@ -66,5 +59,6 @@
     <p>Desarrollado por: Nicolás Aboso, Ramiro Calello y Francisco Fraquelli</p>
   </footer>
 
+  <script src="./detail-series.js"></script> <!-- 👈 ACÁ ESTÁ LINKEADO -->
 </body>
 </html>

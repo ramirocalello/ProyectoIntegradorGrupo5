@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Back to the Future - Detalle</title>
+  <title>Detalle Película</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -24,8 +24,12 @@
     </nav>
 
     <div class="buscador">
-      <form action="search-results.html" method="GET"> 
-        <input type="text" name="user" placeholder="Buscar..."> 
+      <form action="search-results.html" method="GET">
+        <input type="text" name="query" placeholder="Buscar..." required> 
+        <div class="radio-buttons">
+          <label><input type="radio" name="tipo" value="movie" checked> Películas</label>
+          <label><input type="radio" name="tipo" value="tv"> Series</label>
+        </div>
         <button type="submit">Buscar</button>
       </form>
     </div>
@@ -35,28 +39,20 @@
     <section class="detalle-pelicula">
       
       <div class="detalle-img">
-        <img src="./img/Back-To-The-Future.jpg" alt="Back to the Future">
+        <img id="poster" src="" alt="Poster de la película">
       </div>
       
       <div class="detalle-info">
-        <h1>Volver al Futuro (1985)</h1>
-        <h2>Back to the Future</h2>
-
+        <h1 id="titulo"></h1>
         <div class="meta">
-          <p><strong>Calificación:</strong> 96%</p>
-          <p>8.5 desde 1.2M usuarios</p>
-          <p><strong>Duración:</strong> 116 min</p>
-          <p><strong>Calidad:</strong> HD</p>
+          <p><strong>Calificación:</strong> <span id="calificacion"></span></p>
+          <p><strong>Duración:</strong> <span id="duracion"></span></p>
+          <p><strong>Fecha de estreno:</strong> <span id="fecha"></span></p>
         </div>
 
-        <p class="descripcion">
-          Marty McFly, un adolescente típico de los años 80, accidentalmente viaja al pasado en una máquina del tiempo construida por su excéntrico amigo, el científico Doc Brown. Transportado al año 1955, Marty se encuentra con una versión más joven de sus padres antes de que se enamoren. Al interferir sin querer en su primer encuentro, pone en peligro su propia existencia. Ahora, con el tiempo en su contra, deberá encontrar a Doc en el pasado y reparar la línea temporal ayudando a que sus padres se conozcan, todo mientras intenta regresar al futuro antes de que sea demasiado tarde.
-        </p>
+        <p class="descripcion" id="descripcion"></p>
 
-        <p><strong>Género:</strong> <a href="./detail-genres.html">Ciencia ficción</a>
-        <p><strong>País:</strong> Estados Unidos</p>
-        <p><strong>Director:</strong> Robert Zemeckis</p>
-        <p><strong>Actores:</strong> Michael J. Fox, Christopher Lloyd, Lea Thompson</p>
+        <p><strong>Género:</strong> <span id="generos"></span></p>
       </div>
 
     </section>
@@ -66,6 +62,6 @@
     <p>Desarrollado por: Nicolás Aboso, Ramiro Calello y Francisco Fraquelli</p>
   </footer>
 
+  <script src="./detail-movie.js"></script> <!-- LINK AL JS -->
 </body>
 </html>
-

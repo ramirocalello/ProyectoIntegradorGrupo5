@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FilmVerse</title> <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FilmVerse</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+
   <header>
    
     <div class="header-left">
       <img src="./img/logito.png" alt="Logo FilmVerse">
     </div>
-  
+
     <nav class="header-center">
       <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -21,13 +22,20 @@
         <li><a href="login.html">Login</a></li> 
       </ul>
     </nav>
-  
+
     <div class="buscador">
-      <form action="search-results.html" method="GET"> 
-        <input type="text" name="user" placeholder="Buscar..."> 
+      <form action="search-results.html" method="GET">
+        <input type="text" name="query" placeholder="Buscar..." required>
+        <div class="radio-buttons">
+          <label>
+            <input type="radio" name="tipo" value="movie" checked> Películas
+          </label>
+          <label>
+            <input type="radio" name="tipo" value="tv"> Series
+          </label>
+        </div>
         <button type="submit">Buscar</button>
       </form>
-      
     </div>
   </header>
   
@@ -69,6 +77,14 @@
                 </li>
             </ul>
         </section>
+
+  <main>
+    <section>
+      <h2>Películas Populares</h2>
+      <ul class="galeria" id="peliculas-populares">
+        <!-- El JS carga acá las películas populares -->
+      </ul>
+    </section>
 
         <section>
             <h2>Series Populares</h2>
@@ -145,5 +161,25 @@
         <footer>
             <p>Desarrollado por: Nicolás Aboso, Ramiro Calello y Fransico Fraquelli</p>
           </footer>
+    <section>
+      <h2>Series Populares</h2>
+      <ul class="galeria" id="series-populares">
+        <!-- El JS carga acá las series populares -->
+      </ul>
+    </section>
+
+    <section>
+      <h2>Películas Más Valoradas</h2>
+      <ul class="galeria" id="peliculas-mejor-valoradas">
+        <!-- El JS carga acá las películas mejor valoradas -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desarrollado por: Nicolas Aboso, Ramiro Calello y Francisco Fraquelli</p>
+  </footer>
+
+  <script src="./index.js"></script> <!-- Script que carga todo dinámicamente -->
+</body>
 </html>
-</header>

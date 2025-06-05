@@ -1,52 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>seriesgenres</title> <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Géneros de Series</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-<body  class="bodyfooteronly">
-    <header>
-        
-        <div class="header-left">
-          <img src="./img/logito.png" alt="Logo FilmVerse">
-        </div>
-      
-        <nav class="header-center">
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="moviesgenres.html">Géneros de Películas</a></li>
-            <li><a href="seriesgenres.html">Géneros de Series</a></li>
-            <li><a href="login.html">Login</a></li> 
-          </ul>
-        </nav>
-      
-        <div class="buscador">
-          <form action="search-results.html" method="GET"> 
-            <input type="text" name="user" placeholder="Buscar..."> 
-            <button type="submit">Buscar</button>
-          </form>
-        </div>
-      </header>
+<body class="bodyfooteronly">
+  <header>
+    <div class="header-left">
+      <img src="./img/logito.png" alt="Logo FilmVerse">
+    </div>
+    <nav class="header-center">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="moviesgenres.html">Géneros de Películas</a></li>
+        <li><a href="seriesgenres.html">Géneros de Series</a></li>
+        <li><a href="login.html">Login</a></li> 
+      </ul>
+    </nav>
+    <div class="buscador">
+      <form action="search-results.html" method="GET"> 
+        <input type="text" name="user" placeholder="Buscar..."> 
+        <button type="submit">Buscar</button>
+      </form>
+    </div>
+  </header>
 
-  
-         <main class="seriesgenre">
-            <section>
-                <h2>Géneros Series</h2>
-           <ul> 
-            
-            <li><a href="./detail-genres.html"><h3>Suspenso</h3></a></li>
-            <li><a href="./detail-genres.html"><h3>Comedia</h3></a></li>
-            <li><a href="./detail-genres.html"><h3>Romance</h3></a></li>
-            <li><a href="./detail-genres.html"><h3>Terror</h3></a></li>
-            <li><a href="./detail-genres.html"><h3>Drama</h3></a></li>
-        
-        </ul>
-           </section>
-                  </main>
-    
-                  <footer>
-                  <p>Desarrollado por: Nicolás Aboso, Ramiro Calello y Fransico Fraquelli</p>
-                </footer>
+  <main class="seriesgenre">
+    <section>
+      <h2>Géneros de Series</h2>
+      <ul id="lista-generos-series">
+        <!-- Los géneros de series se cargarán acá -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desarrollado por: Nicolas Aboso, Ramiro Calello y Francisco Fraquelli</p>
+  </footer>
+
+  <script src="./generos.js"></script>
 </body>
 </html>
+

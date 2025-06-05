@@ -1,7 +1,6 @@
-
 /*  INDEX  */
 
-* {                                   /* sirve para resetar la pagina x defecto */
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -44,7 +43,7 @@ header {
   padding: 5px 10px;
 }
 
-.buscador {      /*junto dos clases*/
+.buscador {
   display: flex;
   align-items: center;
   background-color: #1c1c1c;
@@ -52,7 +51,7 @@ header {
   padding: 5px 15px;
 }
 
-.buscador input {    
+.buscador input {
   background-color: #1c1c1c;
   border-radius: 5px;
   color: white;
@@ -74,30 +73,31 @@ section {
   margin: 0 0 40px 0;
 }
 
+/* --- GALERIA --- */
 .galeria {
   display: flex;
-  padding: 20px 40px 20px 20px;
+  flex-wrap: wrap; /* 👈 Esto hace que bajen de línea */
+  padding: 20px;
+  justify-content: center; /* 👈 Centrado */
 }
 
 .galeria li {
-  width: 220px;
-  list-style: none;
+  width: 200px;
+  margin: 10px;
   background-color: #1f1f1f;
-  padding: 10px;
   text-align: center;
-  margin: 0 20px 0 0;
+  list-style: none;
 }
 
 .galeria img {
   width: 100%;
-  height: 330px;
-  display: block;
+  height: 300px;
 }
 
 .galeria p {
-  margin: 10px 0 0 0;
-  color: #ccc;
   font-size: 14px;
+  color: #ccc;
+  margin: 10px 0 0 0;
 }
 
 section h2 {
@@ -110,8 +110,7 @@ section h2 {
 }
 
 /*  ESTILOS LOGIN Y REGISTER */
-
-.button{
+.button {
   background-color: #e50914;
   color: #ccc;
   padding: 14px;
@@ -137,11 +136,10 @@ section h2 {
   margin-bottom: 18px;
 }
 
-
 body.login-page {
   background-color: #141414;
   color: #e5e5e5;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;                                       /* espacio arriba para que no tape el header */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -160,7 +158,7 @@ body.login-page .formulario {
   background-color: #1f1f1f;
   padding: 30px;
   width: 500px;
-  margin: 0 auto; /* centra horizontalmente el formulario */
+  margin: 0 auto;
 }
 
 body.login-page .formulario h2 {
@@ -177,17 +175,7 @@ body.login-page .formulario label {
   margin: 0 0 5px 0;
 }
 
-.email-input {
-  padding: 10px;
-  margin: 0 0 15px 0;
-  border: 1px solid #444;
-  background-color: #2a2a2a;
-  color: white;
-  width: 100%;
-  display: block;
-}
-
-.password-input {
+.email-input, .password-input {
   padding: 10px;
   margin: 0 0 15px 0;
   border: 1px solid #444;
@@ -219,7 +207,6 @@ body.login-page form a {
 }
 
 /*  ESTILOS DETAIL MOVIE */
-
 .detalle-pelicula {
   display: flex;
   flex-wrap: wrap;
@@ -266,8 +253,7 @@ body.login-page form a {
   margin: 0 0 10px 0;
 }
 
-/* ESTILOS MOVIESGENRES  */
-
+/* ESTILOS MOVIESGENRES */
 .moviesgenre {
   text-align: center;
 }
@@ -295,13 +281,13 @@ body.login-page form a {
 }
 
 /* ESTILOS SERIESGENRES */
-
 .bodyfooteronly {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
 }
+
 .seriesgenre {
   text-align: center;
 }
@@ -329,8 +315,6 @@ body.login-page form a {
 }
 
 /*  RESULTADOS BUSQUEDA */
-
-
 body.pagina-busqueda .galeria {
   display: flex;
   flex-wrap: nowrap;
@@ -369,7 +353,7 @@ body.pagina-busqueda .galeria a {
   display: block;
 }
 
-footer{
+footer {
   margin-top: 70px;
   display: flex;
   justify-content: start;
