@@ -28,7 +28,7 @@ header {
 }
 
 .header-center ul {
-  list-style: none;
+  list-style: none; 
   display: flex;
 }
 
